@@ -48,8 +48,14 @@ app.get("/about", (req, res) => {
   });
 });
 
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "Portfolio Page Here"
+  });
+});
+
 app.get("/bad", (req, res) => {
-  res.send({
+  res.sed({
     errorMessage: "Unable to fulfil request :("
   });
 });
